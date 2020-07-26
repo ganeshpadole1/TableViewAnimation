@@ -15,6 +15,9 @@
 		1FC0518824CD77CA003113FB /* TableViewAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC0518724CD77CA003113FB /* TableViewAnimationUITests.swift */; };
 		1FC0519824CD797B003113FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC0519724CD797B003113FB /* Main.storyboard */; };
 		1FC0519A24CD7A62003113FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC0519924CD7A62003113FB /* HomeViewController.swift */; };
+		1FC0519C24CD7B07003113FB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC0519B24CD7B07003113FB /* Model.swift */; };
+		1FC0519E24CD7B0F003113FB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC0519D24CD7B0F003113FB /* Data.swift */; };
+		1FC051A224CD7BA1003113FB /* AnimationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC051A124CD7BA1003113FB /* AnimationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		1FC0518924CD77CA003113FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FC0519724CD797B003113FB /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1FC0519924CD7A62003113FB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1FC0519B24CD7B07003113FB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		1FC0519D24CD7B0F003113FB /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		1FC051A124CD7BA1003113FB /* AnimationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,15 +105,14 @@
 		1FC0516424CD77C7003113FB /* TableViewAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				1FC051A024CD7B6A003113FB /* TableViewCell */,
+				1FC0519F24CD7B34003113FB /* Controller */,
 				1FC0519624CD78F6003113FB /* Model */,
 				1FC0519524CD78E7003113FB /* Resources */,
 				1FC0516524CD77C7003113FB /* AppDelegate.swift */,
 				1FC0516724CD77C7003113FB /* SceneDelegate.swift */,
 				1FC0516E24CD77C9003113FB /* Assets.xcassets */,
-				1FC0517024CD77C9003113FB /* LaunchScreen.storyboard */,
 				1FC0517324CD77C9003113FB /* Info.plist */,
-				1FC0519724CD797B003113FB /* Main.storyboard */,
-				1FC0519924CD7A62003113FB /* HomeViewController.swift */,
 			);
 			path = TableViewAnimation;
 			sourceTree = "<group>";
@@ -133,6 +138,8 @@
 		1FC0519524CD78E7003113FB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1FC0519724CD797B003113FB /* Main.storyboard */,
+				1FC0517024CD77C9003113FB /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -140,8 +147,26 @@
 		1FC0519624CD78F6003113FB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1FC0519B24CD7B07003113FB /* Model.swift */,
+				1FC0519D24CD7B0F003113FB /* Data.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1FC0519F24CD7B34003113FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1FC0519924CD7A62003113FB /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1FC051A024CD7B6A003113FB /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1FC051A124CD7BA1003113FB /* AnimationTableViewCell.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,8 +301,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FC0516624CD77C7003113FB /* AppDelegate.swift in Sources */,
+				1FC0519E24CD7B0F003113FB /* Data.swift in Sources */,
+				1FC051A224CD7BA1003113FB /* AnimationTableViewCell.swift in Sources */,
 				1FC0516824CD77C7003113FB /* SceneDelegate.swift in Sources */,
 				1FC0519A24CD7A62003113FB /* HomeViewController.swift in Sources */,
+				1FC0519C24CD7B07003113FB /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
